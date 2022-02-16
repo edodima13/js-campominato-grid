@@ -1,12 +1,13 @@
 //prendere il bottone dll'html e le value delle selcect
 const select = document.getElementById("mode")
 const startGame = document.getElementById("gioca")
+const gridelement = document.getElementById("griglia")
 
 //ascoltare il click del button
 startGame.addEventListener("click",function(){
     //impostare difficoltà
     const mode = select.value
-    console.log(mode)
+    //console.log(mode)
     
     //dichiarare le colonne e le righe
     let rows;
@@ -31,7 +32,17 @@ startGame.addEventListener("click",function(){
 
     //calcolare il numero di celle per ogni modalità
     const numerodicelle = rows * columns
+    //console.log(numerodicelle)
 
-    console.log(numerodicelle)
+    //generare una grigia
+        //fare un ciclo
+    for (let i = 0; i < numerodicelle; i++){
+        //creare un contenitore per i numeri
+        const cell = document.createElement("div")
+        //appendere i numeri in base al numero di celle
+        cell.append = (i + 1)
+        console.log(cell)
+    }
+    
 })
  
